@@ -1,0 +1,31 @@
+@import 'fonts.less';
+@import 'variables.less';
+@import 'mixins.less';
+
+body{
+	text-align: center;
+	background-color: #5fc39980;
+}
+.h1-main{
+	font-family: @base_text_ff_bold;
+	font-size: 40px;
+	color: #5f68c3;
+	padding: 40px;
+}
+.block-main-link{
+	.d-flex;
+	flex-direction: column;		
+    align-items: center;
+	a{
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 34px;
+		font-family: @base_text_title;
+		margin-bottom: 30px;	
+		color:#860e0e;
+		&:hover{
+			color:#000;
+			font-size: 38px;	
+		}
+	}
+}
