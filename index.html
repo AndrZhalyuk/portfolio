@@ -4,31 +4,440 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="Mogo/libs/bootstrap-4.3.1/css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="Mogo/libs/font-awesome-4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="libs/bootstrap-4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="css/jquery.circliful.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-	<h1 class="h1-main">
-		My Portfolio
-	</h1>
-	<div class="block-main-link">
-		<a class="link-sait" href="https://andrzhalyuk.github.io/mogo/">MoGo</a>
-		<a class="link-sait" href="https://andrzhalyuk.github.io/cuda/">Cuda</a>
-		<a class="link-sait" href="https://andrzhalyuk.github.io/flawers/">Flawers</a>
-		<a class="link-sait" href="https://andrzhalyuk.github.io/whitesquare/">Whitesquare</a>
-		<a class="link-sait" href="https://andrzhalyuk.github.io/FleshSystem">FleshSystem</a>
-		<a class="link-sait" href="https://andrzhalyuk.github.io/origami">Origami</a>
-	</div>
-	
-		
-	</a>
+	<header id="header" class="intro-header">
+		<div class="container">
+			<div class="intro-text">
+				<h1>
+					Hello, I`m Andriy Zhalyuk
+				</h1>
+				<p>
+					Front End Developer
+				</p>
+				<a href="#About" class="btn btn-intro">
+					About me
+				</a>
+				<a href="#Portfolio" class="btn btn-intro">
+					My portfolio
+				</a>
+			</div>
+		</div>
+	</header>
 
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="Mogo/libs/bootstrap-4.3.1/js/bootstrap.min.js"></script>
-	<script src="Mogo/libs/slick/slick.min.js"></script>
-	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+	<div id="nav" class="affix">
+		<nav class="navbar navbar-custom">
+
+			<div class="container d-flex">	
+				<div class="nav_menu-name">	
+					<a href="#header">Andriy Zhalyuk</a>
+				</div>
+				<div class="nav_menu-item">	
+					<ul class="menu-item">	
+						<li><a href="#About">About</a></li>
+						<li><a href="#Portfolio">Portfolio</a></li>
+						<li><a href="#Services">Services</a></li>
+						<li><a href="#Skills">Skills</a></li>						
+						<li><a href="#Contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>			
+	</div>
+
+	<section id='About' class="about_me">
+		<div class="container">
+			<h2 class="h2_decor_center">
+				About me
+			</h2>
+			<div class="about_me_content">
+				<div class="me_img">
+					<img src="images/me.jpg" alt="">
+				</div>
+				<div class="me_content">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nulla laudantium voluptas minima aliquid iure eligendi totam repellendus accusamus velit.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, ex!
+					</p>
+					<a href="libs/resume.txt" download><i class="fa fa-download" aria-hidden="true"></i>Download Resume</a>
+				</div>
+
+			</div>
+		</div>	
+	</section>
+
+	<section id="Portfolio" class="sct-my_portfolio">
+		<div class="container">
+			<h2 class="h2_decor_center">
+				My portfolio
+			</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<div class="categories">
+				<ul class="cat">
+					<li>
+						<ol class="type">
+							<li>
+								<a href="#" data-filter="*" class="active">All</a>
+							</li>
+							<li>
+								<a href="" data-filter=".web">Web Design</a>
+							</li>
+							<li>
+								<a href="" data-filter=".app">App Development</a>
+							</li>
+							<li>
+								<a href="" data-filter=".branding">Branding</a>
+							</li>
+						</ol>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="portfolio-items isotope">				
+					<div class="col-sm-6 col-md-3 col-lg-3 web isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
+						<div class="portfolio-item">
+							<div class="hover-bg">
+								<a href="https://andrzhalyuk.github.io/mogo/">
+									<div class="hover-text">
+										<h4>Project</h4>
+										<small>Web-design</small>
+										<i class="fa fa-search"></i>
+									</div>
+									<img src="images/portfolio/01.jpg" alt="Project Title" class="img-responsive">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3 web isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(292px, 0px, 0px);">
+						<div class="portfolio-item">
+							<div class="hover-bg">
+								<a href="https://andrzhalyuk.github.io/origami/">
+									<div class="hover-text">
+										<h4>Project</h4>
+										<small>Web-design</small>
+										<i class="fa fa-search"></i>
+									</div>
+									<img src="images/portfolio/02.jpg" alt="Project Title" class="img-responsive">
+								</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3 branding isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(584px, 0px, 0px);">
+						<div class="portfolio-item">
+							<div class="hover-bg">
+								<a href="https://andrzhalyuk.github.io/flawers/">
+									<div class="hover-text">
+										<h4>Project</h4>
+										<small>Web-design</small>
+										<i class="fa fa-search"></i>
+									</div>
+									<img src="images/portfolio/03.jpg" alt="Project Title" class="img-responsive">
+								</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3 app isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(876px, 0px, 0px);">
+						<div class="portfolio-item">
+							<div class="hover-bg">
+								<a href="https://andrzhalyuk.github.io/FleshSystem/">
+									<div class="hover-text">
+										<h4>Project</h4>
+										<small>Web-design</small>
+										<i class="fa fa-search"></i>
+									</div>
+									<img src="images/portfolio/04.jpg" alt="Project Title" class="img-responsive">
+								</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3 web isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 290px, 0px);">
+						<div class="portfolio-item">
+							<div class="hover-bg">
+								<a href="https://andrzhalyuk.github.io/cuda/">
+									<div class="hover-text">
+										<h4>Project</h4>
+										<small>Web-design</small>
+										<i class="fa fa-search"></i>
+									</div>
+									<img src="images/portfolio/05.jpg" alt="Project Title" class="img-responsive">
+								</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3 branding isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(292px, 290px, 0px);">
+						<div class="portfolio-item">
+							<div class="hover-bg">
+								<a href="https://andrzhalyuk.github.io/whitesquare/">
+									<div class="hover-text">
+										<h4>Project</h4>
+										<small>Web-design</small>
+										<i class="fa fa-search"></i>
+									</div>
+									<img src="images/portfolio/06.jpg" alt="Project Title" class="img-responsive">
+								</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3 app web isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(584px, 290px, 0px);">
+						<div class="portfolio-item">
+							<div class="hover-bg">
+								<a href="https://andrzhalyuk.github.io/mogo/">
+									<div class="hover-text">
+										<h4>Project</h4>
+										<small>Web-design</small>
+										<i class="fa fa-search"></i>
+									</div>
+									<img src="images/portfolio/01.jpg" alt="Project Title" class="img-responsive">
+								</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3 app isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(876px, 290px, 0px);">
+						<div class="portfolio-item">
+							<div class="hover-bg">
+								<a href="https://andrzhalyuk.github.io/mogo/">
+									<div class="hover-text">
+										<h4>Project</h4>
+										<small>Web-design</small>
+										<i class="fa fa-search"></i>
+									</div>
+									<img src="images/portfolio/01.jpg" alt="Project Title" class="img-responsive">
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>		
+			</div>	
+		</div>
+	</section>
+
+	<section id="Services" class="sct-my_services">
+		<div class="container">
+			<h2 class="h2_decor_center">
+				My services
+			</h2>
+			<div class="row">	
+				<div class="col-lg-3 col-md-6 col-sm-12">	
+					<div class="block-services">	
+						<div class="img-services">	
+							<i class="fa fa-laptop"></i>
+						</div>
+						<div class="content-services">	
+							<p class="title-name">Web Design</p>
+							<p class="content-services">	
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, alias!
+							</p>
+						</div>
+					</div>	
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="block-services">	
+						<div class="img-services">	
+							<i class="fa fa-code"></i>
+						</div>
+						<div class="content-services">	
+							<p class="title-name">Development</p>
+							<p class="content-services">	
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, esse!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="block-services">	
+						<div class="img-services">	
+							<i class="fa fa-rocket"></i>
+						</div>
+						<div class="content-services">	
+							<p class="title-name">Branding</p>
+							<p class="content-services">	
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, dolorem.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="block-services">	
+						<div class="img-services">	
+							<i class="fa fa-bullhorn"></i>
+						</div>
+						<div class="content-services">	
+							<p class="title-name">Marketing</p>
+							<p class="content-services">	
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, minus.
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>	
+		</div>
+	</section>
+
+	<section id="Skills" class="sct-my_skills">
+
+		<div class="container">
+			<h2 class="h2_decor_center">
+				My skills
+			</h2>
+			<div class="row no-gutter">
+
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div id="test-circle1" class="circle"  data-animation="1" data-animationStep="5" data-percent="85"></div>
+					<p class="circle_title">
+						HTML 5
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div id="test-circle2" class="circle" data-animation="1" data-animationStep="5" data-percent="75"></div>
+					<p class="circle_title">
+						CSS 3
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div id="test-circle3" class="circle" data-animation="1" data-animationStep="5" data-percent="68"></div>
+					<p class="circle_title">
+						jQuery
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div id="test-circle4" class="circle" data-animation="1" data-animationStep="5" data-percent="65"></div>
+					<p class="circle_title">
+						Photoshop
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div id="test-circle5" class="circle" data-animation="1" data-animationStep="5" data-percent="69"></div>
+					<p class="circle_title">
+						Bootstrap 4 
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div id="test-circle6" class="circle" data-animation="1" data-animationStep="5" data-percent="95"></div>
+					<p class="circle_title">
+						LESS
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="Contact" class="sct-contact_me">
+		<div class="container">
+			<h2 class="h2_decor_center">
+				Contact me
+			</h2>
+			<p class="sub_content_h2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, asperiores.</p>
+			<div class="item-contact">
+				<div class="row">
+					<div class="col-md-4 col-sm-12">
+						<div class="item-contact-block">
+							<div class="img-item-contact">
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
+							</div>
+							<div class="contact-title">
+								City Khmelnitskiy, street: Lvovskoe shose 33/2a
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="item-contact-block">
+							<div class="img-item-contact">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+							</div>
+							<div class="contact-title">
+								andr03409@gmail.com
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="item-contact-block">
+							<div class="img-item-contact">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+							</div>
+							<div class="contact-title">
+								+380-96-90-944-34	
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>			
+			<form  class="main-form" novalidate>
+				<p> Leave me a mesage</p>
+				<div class="block-input">
+					<input class="form-control js_input" type="text" required  placeholder="Your Name*" data-validate="^[а-я і а-яa-z]{2,30}$" name="first_name">
+
+					<input type="text" class="form-control js_input" data-validate="^[а-я і а-яa-z]{2,30}$" name="last_name"  placeholder="Your SubName*">
+				</div>
+				<div class="block-input">
+					<input type="tel" class="form-control js_input phone-input" data-validate="^\d{12}$" data-strip="\D" name="phone" required placeholder="Your phone*">
+					<input class="form-control js_input" type="email" placeholder="Your Email*" 
+					data-validate="^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$" 
+					name="email"
+					>
+				</div>
+				<textarea class="form-control form-textarea js_input" name="Your Massage*" required placeholder="Your Massage*" ></textarea>
+
+				<button type="submit" class="btn btn-button sm-btn xs-btn"> SAND MASSAGE</button>
+			</form>
+			<div class="social-link">
+				<ul>
+					<li>
+						<a href="#">
+							<i class="fa fa-facebook"></i>	
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-telegram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-envelope-o"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<p class="footer-title">
+				Copyright © 2019 Andriy Zhalyuk.
+			</p>
+		</div>
+	</footer>
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="libs/bootstrap-4.3.1/js/bootstrap.min.js"></script>	
+	<script src="libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+	<script src="js/jquery.circliful.min.js"></script>
+	<script src="js/jquery.isotope.js"></script>	
+	<script src="js/SmoothScroll.js"></script>	
 	<script src="js/main.js"></script>
 </body>
 </html>
