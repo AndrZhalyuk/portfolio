@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 	$("#nav").on("click","a", function (event) {
         event.preventDefault();
@@ -223,18 +222,8 @@ $('#nav').affix({
             });
             return false;
         });
-
     });
-	
-	
-	
-
-
-
-
 }());
-
-
 }
 main();
 
