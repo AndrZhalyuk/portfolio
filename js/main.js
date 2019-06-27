@@ -159,9 +159,6 @@ $(".phone-input").mask("+38 (999) 999-99-99");
 		return false;
 	});
 });
-
-
-
  function main() {
 
 (function () {
@@ -171,33 +168,7 @@ $('#nav').affix({
       offset: {
         top: $('header').height()
       }
-});	
-
-	// skills chart
-	$(document).ready(function(e) {
-	//var windowBottom = $(window).height();
-	var index=0;
-	$(document).scroll(function(){
-		var top = $('#skills').height()-$(window).scrollTop();
-		console.log(top)
-		if(top<-1000){
-			if(index==0){	
-			
-				$('.chart').easyPieChart({
-					easing: 'easeOutBounce',
-					onStep: function(from, to, percent) {
-						$(this.el).find('.percent').text(Math.round(percent));
-					}
-				});
-			
-				}
-			index++;
-		}
-	})
-	});
-
-
-  
+});  
     $(window).load(function() {
         var $container = $('.portfolio-items');
         $container.isotope({
